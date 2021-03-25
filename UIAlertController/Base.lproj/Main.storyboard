@@ -23,17 +23,31 @@
                                     <constraint firstAttribute="height" constant="47" id="yft-aj-gSF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button1"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDE-rM-kjL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rI1-4z-jJp">
+                                <rect key="frame" x="148.5" y="393" width="117" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="EMP-eh-r55"/>
+                                    <constraint firstAttribute="width" constant="117" id="bMu-nO-wAk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Button2"/>
+                                <connections>
+                                    <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uf-U2-jIp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rI1-4z-jJp" firstAttribute="top" secondItem="2kV-Ib-nHk" secondAttribute="bottom" constant="79" id="80C-Yt-ao7"/>
                             <constraint firstItem="2kV-Ib-nHk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPp-Bs-Ecb"/>
                             <constraint firstItem="2kV-Ib-nHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="ZVX-sp-05l"/>
+                            <constraint firstItem="rI1-4z-jJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pkI-WH-xcr"/>
                         </constraints>
                     </view>
                 </viewController>
