@@ -40,16 +40,63 @@
                                     <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uf-U2-jIp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJJ-ft-jcb">
+                                <rect key="frame" x="173.5" y="131" width="67" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="KJJ-Gz-7rz"/>
+                                    <constraint firstAttribute="height" constant="46" id="mZY-aF-y5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc3-QV-Is0">
+                                <rect key="frame" x="97" y="540" width="56" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WaG-TE-Tj0"/>
+                                    <constraint firstAttribute="width" constant="56" id="x4f-30-6vJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hcc-wb-Y3q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ4-fP-3MU">
+                                <rect key="frame" x="284" y="540" width="56" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="bjh-iJ-ced"/>
+                                    <constraint firstAttribute="height" constant="44" id="iJK-CB-jdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fo4-Ho-NAE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZJ4-fP-3MU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="496" id="05U-3v-BTo"/>
                             <constraint firstItem="rI1-4z-jJp" firstAttribute="top" secondItem="2kV-Ib-nHk" secondAttribute="bottom" constant="79" id="80C-Yt-ao7"/>
+                            <constraint firstItem="gJJ-ft-jcb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="AT0-Q6-UiB"/>
+                            <constraint firstItem="Vc3-QV-Is0" firstAttribute="top" secondItem="rI1-4z-jJp" secondAttribute="bottom" constant="100" id="FOu-mq-ACE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZJ4-fP-3MU" secondAttribute="trailing" constant="74" id="HNr-76-pie"/>
+                            <constraint firstItem="Vc3-QV-Is0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="M5w-hU-0Qh"/>
+                            <constraint firstItem="gJJ-ft-jcb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MMG-QF-sdQ"/>
                             <constraint firstItem="2kV-Ib-nHk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPp-Bs-Ecb"/>
                             <constraint firstItem="2kV-Ib-nHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="ZVX-sp-05l"/>
                             <constraint firstItem="rI1-4z-jJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pkI-WH-xcr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="gJJ-ft-jcb" id="BD0-K6-Vnp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

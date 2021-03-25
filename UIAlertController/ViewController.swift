@@ -8,8 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var count = 0
 
-    var yamaguchiMaho = [String]()
+    @IBOutlet var countLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,35 @@ class ViewController: UIViewController {
     
     
     }
+    
+    @IBAction func plus(_ sender: Any) {
+        
+        count += 1
+        countLabel.text = String(count)
+        
+        if count >= 21 {
+            let ac = UIAlertController(title: "20です", message: nil, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+            present(ac, animated: true, completion: nil)
+            
+            count = 0
+            countLabel.text = String(count)
+            
+        }
+        
+    }
+    
+    
+    
+    @IBAction func minus(_ sender: Any) {
+        
+        count -= 1
+        countLabel.text = String(count)
+        
+    }
+    
+    
     
     
 
